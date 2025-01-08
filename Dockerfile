@@ -29,4 +29,4 @@ RUN apt-get update -y -q=2 && \
     rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
 RUN git clone https://github.com/lllyasviel/stable-diffusion-webui-forge.git
-CMD ["/webui-forge/webui-user.sh", "--listen"]
+CMD ["/webui-forge/webui-user.sh", "--listen --port 7860"]
