@@ -2,7 +2,7 @@ name: Build and publish Docker image
 
 on:
   push:
-    branches: ['master']
+    branches: ['main']
     tags: [ v* ]
     paths-ignore:
       - 'README.md'
