@@ -11,9 +11,6 @@ RUN apt-get install nano -y
 RUN apt-get install wget -y
 RUN apt-get install mc -y
 RUN apt-get install libtcmalloc-minimal4 -y
-RUN apt-get install libcufft10 -y
-RUN apt-get install cmake -y
-RUN apt-get install build-essential -y
 RUN apt-get install ffmpeg -y
 RUN apt-get install python3.10 -y
 RUN apt-get install python-is-python3 -y
