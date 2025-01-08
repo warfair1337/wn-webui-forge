@@ -20,4 +20,5 @@ RUN apt-get install pip -y
 
 RUN git clone https://github.com/lllyasviel/stable-diffusion-webui-forge.git
 RUN chmod +x /app/stable-diffusion-webui-forge/webui-user.sh
-CMD ["/app/stable-diffusion-webui-forge/webui-user.sh", "--listen --port 7860"]
+RUN chmod +x /app/stable-diffusion-webui-forge/webui.sh
+CMD ["/app/stable-diffusion-webui-forge/webui.sh"]
