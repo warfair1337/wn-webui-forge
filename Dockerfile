@@ -2,7 +2,7 @@ FROM nvidia/cuda:12.6.3-cudnn-runtime-ubuntu24.04
 
 EXPOSE 7860
 
-WORKDIR /webui-forge
+WORKDIR /app
 
 ENV DEBIAN_FRONTEND=noninteractive
 
@@ -19,4 +19,4 @@ RUN apt-get install git -y
 RUN apt-get install pip -y
 
 RUN git clone https://github.com/lllyasviel/stable-diffusion-webui-forge.git
-CMD ["/webui-forge/webui-user.sh", "--listen --port 7860"]
+CMD ["/app/stable-diffusion-webui-forge/webui-user.sh", "--listen --port 7860"]
