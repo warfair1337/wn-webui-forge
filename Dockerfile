@@ -10,6 +10,7 @@ RUN apt-get update
 RUN apt-get install nano -y
 RUN apt-get install wget -y
 RUN apt-get install mc -y
+RUN apt-get install bc -y
 RUN apt-get install libtcmalloc-minimal4 -y
 RUN apt-get install ffmpeg -y
 RUN apt-get install python3.10 -y
@@ -30,4 +31,4 @@ RUN git clone https://github.com/lllyasviel/stable-diffusion-webui-forge.git
 RUN chmod +x /app/stable-diffusion-webui-forge/webui-user.sh
 RUN chmod +x /app/stable-diffusion-webui-forge/webui.sh
 RUN chown -R forge:forge /app/stable-diffusion-webui-forge
-CMD ["/app/stable-diffusion-webui-forge/webui.sh", "--listen"]
+CMD ["/app/stable-diffusion-webui-forge/webui.sh"]
