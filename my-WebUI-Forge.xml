@@ -20,7 +20,7 @@
   <DonateText/>
   <DonateLink/>
   <Requires/>
-  <Config Name="WebUI" Target="7860" Default="7860" Mode="tcp" Description="Port for FaceFusion WebUI" Type="Port" Display="always" Required="false" Mask="false">7860</Config>
+  <Config Name="WebUI" Target="7860" Default="7860" Mode="tcp" Description="Port for WebUI-Forge" Type="Port" Display="always" Required="false" Mask="false">7860</Config>
   <Config Name="Models" Target="/app/stable-diffusion-webui-forge/models/" Default="/mnt/user/appdata/webui-forge/models" Mode="rw" Description="Path to models" Type="Path" Display="always" Required="false" Mask="false"></Config>
   <Config Name="Outputs" Target="/app/stable-diffusion-webui-forge/outputs/" Default="/mnt/user/appdata/webui-forge/outputs" Mode="rw" Description="Path to outputs" Type="Path" Display="always" Required="false" Mask="false"></Config>
   <Config Name="Embeddings" Target="/app/stable-diffusion-webui-forge/embeddings/" Default="/mnt/user/appdata/webui-forge/embeddings" Mode="rw" Description="Path to embeddings" Type="Path" Display="always" Required="false" Mask="false"></Config>
