@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>WebUI-Forge</Name>
+  <Repository>ghcr.io/warfair1337/wn-webui-forge:latest</Repository>
+  <Registry/>
+  <Network>bridge</Network>
+  <Shell>bash</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project/>
+  <Overview/>
+  <Category/>
+  <WebUI>http://[IP]:[PORT:7860]</WebUI>
+  <TemplateURL/>
+  <Icon/>
+  <ExtraParams>--gpus all</ExtraParams>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1736448247</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="WebUI" Target="7860" Default="7860" Mode="tcp" Description="Port for FaceFusion WebUI" Type="Port" Display="always" Required="false" Mask="false">7860</Config>
+  <Config Name="Models" Target="/app/stable-diffusion-webui-forge/models/" Default="/mnt/user/appdata/webui-forge/models" Mode="rw" Description="Path to models" Type="Path" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="Outputs" Target="/app/stable-diffusion-webui-forge/outputs/" Default="/mnt/user/appdata/webui-forge/outputs" Mode="rw" Description="Path to outputs" Type="Path" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="Embeddings" Target="/app/stable-diffusion-webui-forge/embeddings/" Default="/mnt/user/appdata/webui-forge/embeddings" Mode="rw" Description="Path to embeddings" Type="Path" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="Extensions" Target="/app/stable-diffusion-webui-forge/extensions/" Default="/mnt/user/appdata/webui-forge/extensions" Mode="rw" Description="Path to extensions" Type="Path" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="Config-file" Target="/app/stable-diffusion-webui-forge/config.json" Default="/mnt/user/appdata/webui-forge/config.json" Mode="rw" Description="Persistent configuration file" Type="Path" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="UI config-file" Target="/app/stable-diffusion-webui-forge/ui-config.json" Default="/mnt/user/appdata/webui-forge/params.txt" Mode="rw" Description="Persistent UI configuration file" Type="Path" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="Params-file" Target="/app/stable-diffusion-webui-forge/params.txt" Default="/mnt/user/appdata/webui-forge/params.txt" Mode="rw" Description="Persistent params.txt" Type="Path" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="COMMANDLINE_ARGS" Target="COMMANDLINE_ARGS" Default="--listen" Mode="" Description="Arguments passed to WebUI-Forge. --listen is required to access WebUI-Forge over the network" Type="Variable" Display="always" Required="false" Mask="false">--listen</Config>
+</Container>
