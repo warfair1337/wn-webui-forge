@@ -20,10 +20,14 @@ RUN apt-get install pip -y
 RUN apt-get install git -y
 RUN apt-get install pip -y
 
+RUN useradd -m -u 99 -g 100 forge
+RUN chown 99:100 /app
+
+USER forge
+
 RUN git clone https://github.com/lllyasviel/stable-diffusion-webui-forge.git
 RUN chmod +x /app/stable-diffusion-webui-forge/webui-user.sh
 RUN chmod +x /app/stable-diffusion-webui-forge/webui.sh
-
 
 ADD run.sh /app/stable-diffusion-webui-forge/
 RUN chmod +x /app/stable-diffusion-webui-forge/run.sh
