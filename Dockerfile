@@ -29,6 +29,8 @@ RUN git clone https://github.com/lllyasviel/stable-diffusion-webui-forge.git
 RUN chmod +x /app/stable-diffusion-webui-forge/webui-user.sh
 RUN chmod +x /app/stable-diffusion-webui-forge/webui.sh
 
-ADD run.sh /app/stable-diffusion-webui-forge/
-RUN chmod +x /app/stable-diffusion-webui-forge/run.sh
-ENTRYPOINT ["/app/stable-diffusion-webui-forge/run.sh"]
+# ADD run.sh /app/stable-diffusion-webui-forge/
+# RUN chmod +x /app/stable-diffusion-webui-forge/run.sh
+# ENTRYPOINT ["/app/stable-diffusion-webui-forge/run.sh"]
+
+CMD ["/app/stable-diffusion-webui-forge/webui.sh"]
